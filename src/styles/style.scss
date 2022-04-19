@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+body {
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+}
+
+
+a {
+  color: inherit;
+}
