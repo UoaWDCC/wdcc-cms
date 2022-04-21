@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import logo from '../resources/logos/primary_white_512.png';
-import { useLocation } from 'react-router-dom';
+import React, { useState } from "react";
+import styled from "styled-components";
+import logo from "../resources/logos/primary_white_512.png";
+import { useLocation } from "react-router-dom";
 
-import NavItem from './NavItem';
-import FullScreenMenu from './FullScreenMenu';
+import NavItem from "./NavItem";
+import FullScreenMenu from "./FullScreenMenu";
 
 const Container = styled.div`
   &.dark {
@@ -48,7 +48,7 @@ const Container = styled.div`
         position: absolute;
         bottom: 0;
 
-        content: '';
+        content: "";
         background-color: white;
         height: 2px;
         width: 0;
@@ -114,26 +114,26 @@ function NavBar({ hasBg }: { hasBg?: boolean }) {
 
   const listItems: NavItem[] = [
     {
-      displayName: 'Home',
-      link: '/',
+      displayName: "Home",
+      link: "/",
     },
     {
-      displayName: 'Team',
-      link: '/team',
+      displayName: "Team",
+      link: "/team",
     },
     {
-      displayName: 'FAQ',
-      link: '/faq',
+      displayName: "FAQ",
+      link: "/faq",
     },
     {
-      displayName: 'Join for 2022',
-      link: 'https://join.wdcc.co.nz',
+      displayName: "Join for 2022",
+      link: "https://join.wdcc.co.nz",
       highlight: true,
     },
   ].map((listItem) => {
     const isActive =
-      listItem.link === '/'
-        ? location.pathname.endsWith('/')
+      listItem.link === "/"
+        ? location.pathname.endsWith("/")
         : location.pathname.includes(listItem.link);
     return {
       isActive,
@@ -147,8 +147,8 @@ function NavBar({ hasBg }: { hasBg?: boolean }) {
         <a
           href={item.link}
           className={
-            (item.isActive ? 'active' : '') +
-            (item.highlight ? ' highlight' : '')
+            (item.isActive ? "active" : "") +
+            (item.highlight ? " highlight" : "")
           }
         >
           {item.displayName}
@@ -162,15 +162,15 @@ function NavBar({ hasBg }: { hasBg?: boolean }) {
   };
 
   return (
-    <Container className={hasBg ? 'dark' : ''}>
+    <Container className={hasBg ? "dark" : ""}>
       <span id="menu" onClick={handleStateChange}>
         <i className="fa-solid fa-bars"></i>
       </span>
 
-      <ul className={'hori-nav'}>{getListItems()}</ul>
+      <ul className={"hori-nav"}>{getListItems()}</ul>
 
-      <a href={'/'}>
-        <Logo src={logo} alt={'Logo'} />
+      <a href={"/"}>
+        <Logo src={logo} alt={"Logo"} />
       </a>
 
       <FullScreenMenu isOpen={isMenuOpen} toggle={handleStateChange}>

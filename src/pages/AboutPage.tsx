@@ -1,9 +1,9 @@
-import React from 'react';
-import NavBar from '../components/NavBar';
-import Screen from '../components/Screen';
-import Footer from '../components/Footer';
-import styled from 'styled-components';
-import initiativesBackground from '../resources/about_grad.png';
+import React from "react";
+import NavBar from "../components/NavBar";
+import Screen from "../components/Screen";
+import Footer from "../components/Footer";
+import styled from "styled-components";
+import initiativesBackground from "../resources/about_grad.png";
 
 const AboutDescription = styled.div`
   max-width: 100%;
@@ -107,22 +107,22 @@ const TeamScreenGradient = styled.div`
 `;
 
 const execNames = [
-  'joel_hutchinson.jpg',
-  'daniel_torrey.jpg',
-  'raymond_feng.jpg',
-  'dhwani_thakar.jpg',
-  'ellen_zhang.jpg',
-  'eve_zhang.jpg',
-  'james_you.jpg',
-  'alex_zhuang.jpg',
-  'jason_ko.jpg',
-  'lance_delos_reyes.png',
-  'lucy_zhu.jpg',
-  'brendan_zhou.jpg',
+  "joel_hutchinson.jpg",
+  "daniel_torrey.jpg",
+  "raymond_feng.jpg",
+  "dhwani_thakar.jpg",
+  "ellen_zhang.jpg",
+  "eve_zhang.jpg",
+  "james_you.jpg",
+  "alex_zhuang.jpg",
+  "jason_ko.jpg",
+  "lance_delos_reyes.png",
+  "lucy_zhu.jpg",
+  "brendan_zhou.jpg",
 
-  'tony_cui.png',
-  'youxiang_lei.jpg',
-  'josh_feng.jpg',
+  "tony_cui.png",
+  "youxiang_lei.jpg",
+  "josh_feng.jpg",
 ];
 
 function AboutPage() {
@@ -141,7 +141,7 @@ function AboutPage() {
             expanded to a membership base of 450+ members, serving students
             across Auckland from both UoA and AUT. We are also an incorporated
             society with charities status, and you can view our recent annual
-            filings here{' '}
+            filings here{" "}
             <a href="https://register.charities.govt.nz/CharitiesRegister/ViewCharity?accountId=71489b06-782a-ec11-8d9e-00155d5731b1&searchId=b52c8156-ff6d-47db-9579-fa2522f83201">
               on the charities register
             </a>
@@ -195,8 +195,8 @@ function AboutPage() {
         </ExecList>
 
         <p>
-          Wanting to join our team? Get in touch with us at{' '}
-          <a href={'mailto:secretary@wdcc.co.nz'}>secretary@wdcc.co.nz</a>
+          Wanting to join our team? Get in touch with us at{" "}
+          <a href={"mailto:secretary@wdcc.co.nz"}>secretary@wdcc.co.nz</a>
         </p>
       </WhereScreen>
 

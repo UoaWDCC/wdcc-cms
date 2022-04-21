@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react';
-import styled from 'styled-components';
+import React, { ReactNode } from "react";
+import styled from "styled-components";
 
 interface FullScreenMenuProps {
   children: ReactNode;
@@ -63,13 +63,13 @@ const Container = styled.div`
 
 function FullScreenMenu({ children, isOpen, toggle }: FullScreenMenuProps) {
   const exitButtonPressed = () => {
-    console.log('Pressed');
+    console.log("Pressed");
     toggle();
   };
 
   return (
     <>
-      <Container className={isOpen ? 'visible' : 'hidden'}>
+      <Container className={isOpen ? "visible" : "hidden"}>
         <span id="cross" onClick={exitButtonPressed}>
           <i className="fa-solid fa-xmark" />
         </span>

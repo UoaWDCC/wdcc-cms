@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const OutlinedButton = styled.a`
   padding: 10px 20px;

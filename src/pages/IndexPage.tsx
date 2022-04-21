@@ -1,25 +1,25 @@
-import React from 'react';
-import styled from 'styled-components';
-import Screen from '../components/Screen';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
+import React from "react";
+import styled from "styled-components";
+import Screen from "../components/Screen";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 // Ignoring this as this package is old and does not have typings
 // @ts-ignore
-import 'particles.js';
+import "particles.js";
 
-import combinedBanner from '../resources/combined_banner.png';
-import initiativesBackground from '../resources/media/HACKATHON-126.jpg';
-import OutlinedButton from '../components/OutlinedButton';
-import InitiativeCard from '../components/InitiativeCard';
+import combinedBanner from "../resources/combined_banner.png";
+import initiativesBackground from "../resources/media/HACKATHON-126.jpg";
+import OutlinedButton from "../components/OutlinedButton";
+import InitiativeCard from "../components/InitiativeCard";
 
-import projectIcon from '../resources/wdcc_icon_project.png';
-import eventIcon from '../resources/wdcc_icon_event.png';
-import workshopIcon from '../resources/wdcc_icon_workshop.png';
+import projectIcon from "../resources/wdcc_icon_project.png";
+import eventIcon from "../resources/wdcc_icon_event.png";
+import workshopIcon from "../resources/wdcc_icon_workshop.png";
 
-import computerIcon from '../resources/computer_icon.png';
+import computerIcon from "../resources/computer_icon.png";
 
-import sponsors from '../resources/wdcc_sponsors.png';
+import sponsors from "../resources/wdcc_sponsors.png";
 
 const Splash = styled(Screen)`
   --light-blue: rgb(49, 126, 187);
@@ -246,12 +246,12 @@ const ParticlesJS = styled.div`
 
 export default function IndexPage() {
   // @ts-ignore
-  particlesJS.load('particles-js', 'resources/particlesjs-config.json');
+  particlesJS.load("particles-js", "resources/particlesjs-config.json");
 
   return (
     <>
       <Splash>
-        <ParticlesJS id={'particles-js'} />
+        <ParticlesJS id={"particles-js"} />
         <SplashContent>
           <div>
             <h2>University of Auckland</h2>
@@ -263,7 +263,7 @@ export default function IndexPage() {
             </p>
           </div>
 
-          <img src={computerIcon} alt={'Computer icon (graphic)'} />
+          <img src={computerIcon} alt={"Computer icon (graphic)"} />
         </SplashContent>
       </Splash>
       <NavBar />
@@ -271,7 +271,7 @@ export default function IndexPage() {
       <SponsorsScreen>
         <SponsorGrid>
           <h1>Supported by our 2022 Sponsors</h1>
-          <img src={sponsors} alt={'WDCC Sponsors 2022'} />
+          <img src={sponsors} alt={"WDCC Sponsors 2022"} />
         </SponsorGrid>
       </SponsorsScreen>
 
@@ -287,10 +287,10 @@ export default function IndexPage() {
               You don't need to know web development. <b>Membership is free!</b>
             </p>
           </div>
-          <JoinButton href={'https://join.wdcc.co.nz'}>Join WDCC</JoinButton>
+          <JoinButton href={"https://join.wdcc.co.nz"}>Join WDCC</JoinButton>
         </div>
 
-        <img src={combinedBanner} alt={'Hackathon photos'} />
+        <img src={combinedBanner} alt={"Hackathon photos"} />
       </JoinScreen>
 
       <InitiativesScreen>
@@ -322,7 +322,7 @@ export default function IndexPage() {
             workshops that help to upskill.
           </p>
 
-          <InitiativesButton href={'/team'}>The team</InitiativesButton>
+          <InitiativesButton href={"/team"}>The team</InitiativesButton>
         </InitiativesScreenContent>
       </InitiativesScreen>
 
@@ -330,7 +330,7 @@ export default function IndexPage() {
         <h1>What do we do?</h1>
         <InitiativeContainer>
           <InitiativeCard
-            title={'Hands-On Projects'}
+            title={"Hands-On Projects"}
             description={`
             We provide opportunities for students to gain industry experience by establishing pro bono projects on website design and development.
             <br /><br />
@@ -339,7 +339,7 @@ export default function IndexPage() {
             photo={projectIcon}
           />
           <InitiativeCard
-            title={'Workshops'}
+            title={"Workshops"}
             description={`
             
             Knowledge on web is arguably one of the most valuable skills in the tech industry. We host a range of workshops at different levels to teach members the skills they will need to participate in our projects.
@@ -350,7 +350,7 @@ export default function IndexPage() {
             photo={workshopIcon}
           />
           <InitiativeCard
-            title={'Events and Competitions'}
+            title={"Events and Competitions"}
             description={`
             We also hold some social events for our community, bringing our industry sponsors together with students to network.
             <br /><br />
