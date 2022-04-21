@@ -1,11 +1,12 @@
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
-import { EventsScreen } from "./EventsPage.styled";
+import Screen from "../../styles/Screen";
+
 function EventsPage() {
   return (
     <>
       <NavBar hasBg={true} />
-      <EventsScreen>Events!!</EventsScreen>
+      <Screen>Events!!</Screen>
       <Footer />
     </>
   );
