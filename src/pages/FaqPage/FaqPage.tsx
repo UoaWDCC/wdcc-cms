@@ -1,17 +1,8 @@
-import React from "react";
 import Faq from "react-faq-component";
-import styled from "styled-components";
-import NavBar from "../components/NavBar";
-import Screen from "../components/Screen";
-import Footer from "../components/Footer";
-
-const Container = styled.div`
-  h2 {
-    margin-bottom: 20px;
-  }
-  max-width: 1200px;
-  margin: 50px auto;
-`;
+import NavBar from "../../components/NavBar/NavBar";
+import Screen from "../../styles/Screen";
+import Footer from "../../components/Footer/Footer";
+import { Container, styles } from "./FaqPage.styled";
 
 const data = {
   title: "Frequently Asked Questions",
@@ -46,15 +37,6 @@ const data = {
       content: `We will hold a BAGM (Biannual General Meeting) in July and November. This is a chance to give a speech and you can be voted in to join our exec team.`,
     },
   ],
-};
-
-const styles = {
-  bgColor: "white",
-  titleTextColor: "rgb(29, 96, 157)",
-  rowTitleColor: "#444",
-  rowContentColor: "grey",
-  rowContentPaddingBottom: "50px",
-  // arrowColor: 'red',
 };
 
 const config = {

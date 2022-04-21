@@ -1,7 +1,7 @@
 import React from "react";
-import NavBar from "../components/NavBar";
-import Screen from "../components/Screen";
-import Footer from "../components/Footer";
+import NavBar from "../components/NavBar/NavBar";
+import Screen from "../styles/Screen";
+import Footer from "../components/Footer/Footer";
 
 function SponsorsPage() {
   return (
