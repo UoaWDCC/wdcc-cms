@@ -8,7 +8,6 @@ interface FullScreenMenuProps {
 }
 
 const Container = styled.div`
-
   &.hidden {
     display: none;
   }
@@ -23,7 +22,7 @@ const Container = styled.div`
     position: fixed;
     top: 50px;
     left: 50px;
-    
+
     color: white;
 
     font-size: 2rem;
@@ -60,12 +59,9 @@ const Container = styled.div`
       text-decoration: none;
     }
   }
-
 `;
 
-
 function FullScreenMenu({ children, isOpen, toggle }: FullScreenMenuProps) {
-
   const exitButtonPressed = () => {
     console.log('Pressed');
     toggle();
@@ -74,18 +70,13 @@ function FullScreenMenu({ children, isOpen, toggle }: FullScreenMenuProps) {
   return (
     <>
       <Container className={isOpen ? 'visible' : 'hidden'}>
-
-        <span id='cross' onClick={exitButtonPressed}>
-          <i  className='fa-solid fa-xmark' />
+        <span id="cross" onClick={exitButtonPressed}>
+          <i className="fa-solid fa-xmark" />
         </span>
 
         <div>
-          <ol>
-            {children}
-          </ol>
+          <ol>{children}</ol>
         </div>
-
-
       </Container>
     </>
   );

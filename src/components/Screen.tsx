@@ -6,9 +6,9 @@ const Screen = styled.div`
   min-height: 100vh;
   box-sizing: border-box;
   padding: 50px 75px;
-  
+
   overflow: hidden;
-  
+
   @media (max-width: 700px) {
     padding: 50px 30px;
   }

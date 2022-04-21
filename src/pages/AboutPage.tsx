@@ -17,14 +17,13 @@ const AboutDescription = styled.div`
 
 const WhereScreen = styled(Screen)`
   min-height: auto;
-  background-color: #FFD166;
+  background-color: #ffd166;
 `;
 
 const PhotoGrid = styled.div`
-
   height: 100%;
   max-width: 100vw;
-  background-color: #FFD166;
+  background-color: #ffd166;
 
   display: grid;
   grid-template-rows: repeat(2, auto);
@@ -34,7 +33,6 @@ const PhotoGrid = styled.div`
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(5, auto);
   }
-
 
   @media (max-width: 800px) {
     grid-template-rows: repeat(5, auto);
@@ -46,7 +44,6 @@ const PhotoGrid = styled.div`
     width: 100%;
     height: 100%;
   }
-
 `;
 
 const TeamScreen = styled(Screen)`
@@ -59,8 +56,7 @@ const TeamScreen = styled(Screen)`
   }
 `;
 
-const TeamPhotoScreen = styled.div`
-`;
+const TeamPhotoScreen = styled.div``;
 
 const ExecList = styled.ul`
   columns: 3;
@@ -69,11 +65,11 @@ const ExecList = styled.ul`
   max-width: 1000px;
 
   @media (max-width: 650px) {
-    columns: 2
+    columns: 2;
   }
 
   @media (max-width: 400px) {
-    columns: 1
+    columns: 1;
   }
 
   li {
@@ -91,9 +87,13 @@ const ExecList = styled.ul`
   }
 `;
 
-
 const TeamScreenGradient = styled.div`
-  background: linear-gradient(135deg, #ffffff, rgba(255, 255, 255, 0.59), rgb(0, 0, 0, 0));
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    rgba(255, 255, 255, 0.59),
+    rgb(0, 0, 0, 0)
+  );
 
   position: absolute;
   top: 0;
@@ -105,7 +105,6 @@ const TeamScreenGradient = styled.div`
 
   min-width: 1000px;
 `;
-
 
 const execNames = [
   'joel_hutchinson.jpg',
@@ -135,18 +134,21 @@ function AboutPage() {
         <TeamScreenGradient />
 
         <div>
-
           <AboutDescription>
             <h1>Who we are</h1>
-
-            Web Development & Consulting Club Incorporated started as student club at the University of Auckland in 2019. Since then, we have expanded to a membership base of 450+ members, serving students across Auckland from both UoA and AUT.
-
-              We are also an incorporated society with charities status, and you can view our recent annual filings here <a
-              href='https://register.charities.govt.nz/CharitiesRegister/ViewCharity?accountId=71489b06-782a-ec11-8d9e-00155d5731b1&searchId=b52c8156-ff6d-47db-9579-fa2522f83201'>on the charities register</a>.
+            Web Development & Consulting Club Incorporated started as student
+            club at the University of Auckland in 2019. Since then, we have
+            expanded to a membership base of 450+ members, serving students
+            across Auckland from both UoA and AUT. We are also an incorporated
+            society with charities status, and you can view our recent annual
+            filings here{' '}
+            <a href="https://register.charities.govt.nz/CharitiesRegister/ViewCharity?accountId=71489b06-782a-ec11-8d9e-00155d5731b1&searchId=b52c8156-ff6d-47db-9579-fa2522f83201">
+              on the charities register
+            </a>
+            .
           </AboutDescription>
         </div>
       </TeamScreen>
-
 
       <WhereScreen>
         <h1>Your team for 2022</h1>
@@ -163,7 +165,6 @@ function AboutPage() {
 
           <li>Secretary</li>
           <li>Brendan Zhou</li>
-
 
           <li>Operations Director</li>
           <li>Ellen Zhang</li>
@@ -193,17 +194,16 @@ function AboutPage() {
           <li>Eve Zhang</li>
         </ExecList>
 
-        <p>Wanting to join our team? Get in touch with us at <a
-          href={'mailto:secretary@wdcc.co.nz'}>secretary@wdcc.co.nz</a></p>
+        <p>
+          Wanting to join our team? Get in touch with us at{' '}
+          <a href={'mailto:secretary@wdcc.co.nz'}>secretary@wdcc.co.nz</a>
+        </p>
       </WhereScreen>
 
       <TeamPhotoScreen>
-
         <PhotoGrid>
           {execNames.map((it) => {
-            return (
-              <img src={`/resources/wdcc_photos/${it}`} alt={it} />
-            );
+            return <img src={`/resources/wdcc_photos/${it}`} alt={it} />;
           })}
         </PhotoGrid>
       </TeamPhotoScreen>

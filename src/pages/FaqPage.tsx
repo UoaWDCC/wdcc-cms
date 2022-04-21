@@ -53,7 +53,7 @@ const styles = {
   titleTextColor: 'rgb(29, 96, 157)',
   rowTitleColor: '#444',
   rowContentColor: 'grey',
-  rowContentPaddingBottom: '50px'
+  rowContentPaddingBottom: '50px',
   // arrowColor: 'red',
 };
 
