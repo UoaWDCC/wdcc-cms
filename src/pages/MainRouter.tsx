@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import IndexPage from "./IndexPage";
+import EventsPage from "./EventsPage";
 import AboutPage from "./AboutPage";
 import SponsorsPage from "./SponsorsPage";
 import FaqPage from "./FaqPage";
@@ -19,6 +20,7 @@ export default function MainRouter() {
     <BrowserRouter>
       <Switch>
         <Route exact path={"/"} component={IndexPage} />
+        <Route exact path={"/events"} component={EventsPage} />
         <Route exact path={"/team"} component={AboutPage} />
         <Route exact path={"/sponsors"} component={SponsorsPage} />
         <Route exact path={"/faq"} component={FaqPage} />
