@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../../resources/logos/primary_white_512.png";
 import { useLocation } from "react-router-dom";
 import { Container, Logo } from "./NavBar.styled";
