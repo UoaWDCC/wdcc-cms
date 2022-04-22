@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import  { ReactNode } from "react";
 import { Container } from "./FullScreenMenu.styled";
 interface FullScreenMenuProps {
   children: ReactNode;

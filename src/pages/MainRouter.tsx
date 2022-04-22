@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import IndexPage from "./IndexPage/IndexPage";
 import EventsPage from "./EventsPage/EventsPage";
 import AboutPage from "./AboutPage/AboutPage";
-import SponsorsPage from "./SponsorsPage";
+import SponsorsPage from "./SponsorsPage/SponsorsPage";
 import FaqPage from "./FaqPage/FaqPage";
 
 function Redirect({ redirectUrl }: { redirectUrl: string }) {
