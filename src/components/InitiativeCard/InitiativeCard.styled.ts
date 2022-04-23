@@ -1,13 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-interface InitiativeCardProps {
-  photo: any;
-  description: string;
-  title: string;
-}
-
-const Container = styled.div`
+export const Container = styled.div`
   position: relative;
   margin: 0 20px;
   padding: 30px;
@@ -42,17 +35,3 @@ const Container = styled.div`
     line-height: 2rem;
   }
 `;
-
-function InitiativeCard({ title, description, photo }: InitiativeCardProps) {
-  return (
-    <Container>
-      <div>
-        <img src={photo} alt={title} />
-      </div>
-      <h2>{title}</h2>
-      <p dangerouslySetInnerHTML={{ __html: description }} />
-    </Container>
-  );
-}
-
-export default InitiativeCard;

@@ -1,13 +1,5 @@
-import React, { ReactNode } from "react";
 import styled from "styled-components";
-
-interface FullScreenMenuProps {
-  children: ReactNode;
-  isOpen: boolean;
-  toggle: Function;
-}
-
-const Container = styled.div`
+export const Container = styled.div`
   &.hidden {
     display: none;
   }
@@ -60,26 +52,3 @@ const Container = styled.div`
     }
   }
 `;
-
-function FullScreenMenu({ children, isOpen, toggle }: FullScreenMenuProps) {
-  const exitButtonPressed = () => {
-    console.log("Pressed");
-    toggle();
-  };
-
-  return (
-    <>
-      <Container className={isOpen ? "visible" : "hidden"}>
-        <span id="cross" onClick={exitButtonPressed}>
-          <i className="fa-solid fa-xmark" />
-        </span>
-
-        <div>
-          <ol>{children}</ol>
-        </div>
-      </Container>
-    </>
-  );
-}
-
-export default FullScreenMenu;
