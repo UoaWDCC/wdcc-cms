@@ -29,34 +29,31 @@ import {
   InitiativesButton,
   ParticlesJS,
 } from "./IndexPage.styled";
-
+const DATA = require("./Index.json");
 export default function IndexPage() {
   // @ts-ignore
   particlesJS.load("particles-js", "resources/particlesjs-config.json");
 
   return (
     <>
+      <NavBar />
+
       <Splash>
         <ParticlesJS id={"particles-js"} />
         <SplashContent>
           <div>
-            <h2>University of Auckland</h2>
-            <h1>Web Development & Consulting Club</h1>
-            <p>
-              We promote the learning and practice of software development
-              through workshops and real-world projects, to equip and inspire
-              tomorrow's talent
-            </p>
+            <h2>{DATA.splashYellowTitle}</h2>
+            <h1>{DATA.splashTitle}</h1>
+            <p>{DATA.splashSubtitle}</p>
           </div>
 
           <img src={computerIcon} alt={"Computer icon (graphic)"} />
         </SplashContent>
       </Splash>
-      <NavBar />
 
       <SponsorsScreen>
         <SponsorGrid>
-          <h1>Supported by our 2022 Sponsors</h1>
+          <h1>{DATA.sponsorText}</h1>
           <img src={sponsors} alt={"WDCC Sponsors 2022"} />
         </SponsorGrid>
       </SponsorsScreen>
@@ -65,13 +62,9 @@ export default function IndexPage() {
         <div>
           <h1>Become a member for 2022</h1>
           <div>
-            <p>
-              Get up-to-date reminders of WDCC events and workshops, and some
-              exclusive member networking events throughout the year.
-            </p>
-            <p>
-              You don't need to know web development. <b>Membership is free!</b>
-            </p>
+            {DATA.joinDescription.map((item: string) => (
+              <p>{item}</p>
+            ))}
           </div>
           <JoinButton href={"https://join.wdcc.co.nz"}>Join WDCC</JoinButton>
         </div>
