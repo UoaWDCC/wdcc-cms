@@ -1,4 +1,4 @@
-import  { ReactNode } from "react";
+import { ReactNode } from "react";
 import { Container } from "./FullScreenMenu.styled";
 interface FullScreenMenuProps {
   children: ReactNode;
@@ -8,7 +8,6 @@ interface FullScreenMenuProps {
 
 function FullScreenMenu({ children, isOpen, toggle }: FullScreenMenuProps) {
   const exitButtonPressed = () => {
-    console.log("Pressed");
     toggle();
   };
 

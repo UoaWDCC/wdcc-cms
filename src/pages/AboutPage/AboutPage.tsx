@@ -12,7 +12,6 @@ import {
 
 const DATA = require("./About.json");
 function AboutPage() {
-  console.log(DATA);
   return (
     <>
       <NavBar hasBg={true} />
