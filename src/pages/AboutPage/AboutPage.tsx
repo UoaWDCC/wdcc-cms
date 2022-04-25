@@ -11,7 +11,6 @@ import {
 } from "./AboutPage.styled";
 
 const DATA = require("./About.json");
-
 function AboutPage() {
   console.log(DATA);
   return (
