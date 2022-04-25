@@ -16,10 +16,6 @@ function NavBar({ hasBg }: { hasBg?: boolean }) {
       link: "/",
     },
     {
-      displayName: "Events",
-      link: "/events",
-    },
-    {
       displayName: "Team",
       link: "/team",
     },
