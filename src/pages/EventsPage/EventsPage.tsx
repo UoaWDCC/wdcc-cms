@@ -6,7 +6,6 @@ function EventsPage() {
   return (
     <>
       <NavBar hasBg={true} />
-      <Screen>Events!!</Screen>
       <Footer />
     </>
   );
