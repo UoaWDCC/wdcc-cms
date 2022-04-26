@@ -5,6 +5,7 @@ import IndexPage from "./IndexPage/IndexPage";
 import AboutPage from "./AboutPage/AboutPage";
 import SponsorsPage from "./SponsorsPage/SponsorsPage";
 import FaqPage from "./FaqPage/FaqPage";
+import Events from "./EventsPage/EventsPage";
 
 function Redirect({ redirectUrl }: { redirectUrl: string }) {
   useEffect(() => {
@@ -22,6 +23,7 @@ export default function MainRouter() {
         <Route exact path={"/team"} component={AboutPage} />
         <Route exact path={"/sponsors"} component={SponsorsPage} />
         <Route exact path={"/faq"} component={FaqPage} />
+        <Route exact path={"/events"} component={Events} />
         <Route exact path={"/discord"}>
           <Redirect redirectUrl={"https://discord.gg/9AC6xeXXzu"} />
         </Route>
