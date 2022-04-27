@@ -1,0 +1,13 @@
+{
+    "footerMsg": "Join the UoA Tech Clubs community!",
+    "linkTarget" : "_blank",
+    "linkRel": "noreferrer",
+    "discordLink": "https://discord.gg/9AC6xeXXzu",
+    "linkedinLink": "https://nz.linkedin.com/company/uoa-wdcc",
+    "fbLink": "https://www.facebook.com/uoa.wdcc",
+    "igLink": "https://www.instagram.com/uoa_wdcc/",
+    "contactEmail": "mailto:contact@wdcc.co.nz",
+    "githubLink": "https://github.com/UoaWDCC", 
+    "poweredBy": "Powered by WDCC using React + TypeScript",
+    "copyright": ""
+}

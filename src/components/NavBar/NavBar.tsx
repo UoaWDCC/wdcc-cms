@@ -5,34 +5,23 @@ import { Container, Logo } from "./NavBar.styled";
 import NavItem from "../NavItem";
 import FullScreenMenu from "../FullScreenMenu/FullScreenMenu";
 
+const DATA = require("./NavBar.json");
 function NavBar({ hasBg }: { hasBg?: boolean }) {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const location = useLocation();
 
-  const listItems: NavItem[] = [
-    {
-      displayName: "Home",
-      link: "/",
-    },
-    {
-      displayName: "Events",
-      link: "/events",
-    },
-    {
-      displayName: "Team",
-      link: "/team",
-    },
-    {
-      displayName: "FAQ",
-      link: "/faq",
-    },
-    {
-      displayName: "Join for 2022",
-      link: "https://join.wdcc.co.nz",
-      highlight: true,
-    },
-  ].map((listItem) => {
+  const listItems: NavItem[] = DATA.navItems.map(function (navItem: {
+    displayName: string;
+    link: string;
+  }) {
+    return {
+      displayName: navItem.displayName,
+      link: navItem.link,
+    };
+  });
+
+  listItems.map((listItem) => {
     const isActive =
       listItem.link === "/"
         ? location.pathname.endsWith("/")

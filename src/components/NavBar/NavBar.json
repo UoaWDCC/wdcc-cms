@@ -1,0 +1,25 @@
+{
+    "navItems": [
+        {
+            "displayName": "Home",
+            "link": "/"
+        },
+        {
+            "displayName": "Events",
+            "link": "/events"
+        },
+        {
+            "displayName": "Team",
+            "link": "/team"
+        },
+        {
+            "displayName": "FAQ",
+            "link": "/faq"
+        },
+        {
+            "displayName": "Join for 2022",
+            "link": "https://join.wdcc.co.nz"
+        }
+    ]
+
+}
