@@ -9,13 +9,8 @@ import {
   ExecList,
   TeamScreenGradient,
 } from "./AboutPage.styled";
-import { createGlobalStyle } from "styled-components";
 
-interface TeamMember {
-  name: string,
-  title: string,
-  photoFileName: string,
-}
+import TeamMember from "./TeamMember";
 
 const DATA = require("./About.json");
 
@@ -51,9 +46,11 @@ function AboutPage() {
       <TeamPhotoScreen>
         <PhotoGrid>
           {DATA.teamMembers.map((item: TeamMember) => (
-            <img src={`/resources/wdcc_photos/${item.photoFileName}`} alt={item.photoFileName} />
-          )
-          )}
+            <img
+              src={`/resources/wdcc_photos/${item.photoFileName}`}
+              alt={item.photoFileName}
+            />
+          ))}
         </PhotoGrid>
       </TeamPhotoScreen>
       <Footer />

@@ -4,41 +4,41 @@
   "mainLink": "https://register.charities.govt.nz/CharitiesRegister/ViewCharity?accountId=71489b06-782a-ec11-8d9e-00155d5731b1&searchId=b52c8156-ff6d-47db-9579-fa2522f83201",
   "mainLinkText": "on the charities register",
   "teamTitle": "Your team for 2022",
-  "teamMembers":[
+  "teamMembers": [
     {
       "name": "Raymond Feng",
       "title": "President",
-      "photoFileName":"raymond_feng.jpg"
+      "photoFileName": "raymond_feng.jpg"
     },
     {
       "name": "Joel Hutchinson",
       "title": "Vice President",
-      "photoFileName":"joel_hutchinson.jpg"
+      "photoFileName": "joel_hutchinson.jpg"
     },
     {
       "name": "Daniel Torrey",
       "title": "Treasurer",
-      "photoFileName":"daniel_torrey.jpg"
+      "photoFileName": "daniel_torrey.jpg"
     },
     {
       "name": "Brendan Zhou",
       "title": "Secretary",
-      "photoFileName":"brendan_zhou.jpg"
+      "photoFileName": "brendan_zhou.jpg"
     },
     {
-      "name":  "Ellen Zhang",
+      "name": "Ellen Zhang",
       "title": "Operations Director",
-      "photoFileName":"ellen_zhang.jpg"
+      "photoFileName": "ellen_zhang.jpg"
     },
     {
-      "name":  "Dhwani Thakar",
+      "name": "Dhwani Thakar",
       "title": "Marketing Director",
-      "photoFileName":"dhwani_thakar.jpg"
+      "photoFileName": "dhwani_thakar.jpg"
     },
     {
-      "name":  "Alex Zhuang",
-      "title":   "Sponsorships & Outreach Director",
-      "photoFileName":"alex_zhuang.jpg"
+      "name": "Alex Zhuang",
+      "title": "Sponsorships & Outreach Director",
+      "photoFileName": "alex_zhuang.jpg"
     },
     {
       "name": "Youxiang Lei",
@@ -47,40 +47,39 @@
     },
     {
       "name": "James You",
-      "title":  "Projects Director",
+      "title": "Projects Director",
       "photoFileName": "james_you.jpg"
     },
     {
       "name": "Jason Ko",
-      "title":  "Associate Projects Director",
-      "photoFileName":"jason_ko.jpg"
+      "title": "Associate Projects Director",
+      "photoFileName": "jason_ko.jpg"
     },
     {
-      "name":  "Tony Cui",
-      "title":  "Marketing Executive",
+      "name": "Tony Cui",
+      "title": "Marketing Executive",
       "photoFileName": "tony_cui.png"
     },
     {
-      "name":   "Lucy Zhu",
-      "title":   "Marketing Executive",
+      "name": "Lucy Zhu",
+      "title": "Marketing Executive",
       "photoFileName": "lucy_zhu.jpg"
     },
     {
-      "name":    "Lance Delos Reyes",
-      "title":  "General Executive",
+      "name": "Lance Delos Reyes",
+      "title": "General Executive",
       "photoFileName": "lance_delos_reyes.png"
     },
     {
       "name": "Josh Feng",
-      "title":  "General Executive",
+      "title": "General Executive",
       "photoFileName": "josh_feng.jpg"
     },
     {
       "name": "Eve Zhang",
-      "title":  "General Executive",
-      "photoFileName":   "eve_zhang.jpg"
+      "title": "General Executive",
+      "photoFileName": "eve_zhang.jpg"
     }
-
   ],
   "teamDescription": "Wanting to join our team? Get in touch with us at",
   "emailAdress": "secretary@wdcc.co.nz"
