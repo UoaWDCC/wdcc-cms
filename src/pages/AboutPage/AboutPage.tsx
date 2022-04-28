@@ -10,7 +10,7 @@ import {
   TeamScreenGradient,
 } from "./AboutPage.styled";
 
-import TeamMember from "./TeamMember";
+import TeamMember from "../TeamMember";
 
 const DATA = require("./About.json");
 
