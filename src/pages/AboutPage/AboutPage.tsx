@@ -9,8 +9,16 @@ import {
   ExecList,
   TeamScreenGradient,
 } from "./AboutPage.styled";
+import { createGlobalStyle } from "styled-components";
+
+interface TeamMember {
+  name: string,
+  title: string,
+  photoFileName: string,
+}
 
 const DATA = require("./About.json");
+
 function AboutPage() {
   return (
     <>
@@ -28,8 +36,11 @@ function AboutPage() {
       <WhereScreen>
         <h1>{DATA.secondaryTitle}</h1>
         <ExecList>
-          {DATA.team.map((item: string, i: any) => (
-            <li key={i}>{item}</li>
+          {DATA.teamMembers.map((item: TeamMember) => (
+            <>
+              <li key={item.title}>{item.title}</li>
+              <li key={item.name}>{item.name}</li>
+            </>
           ))}
         </ExecList>
         <p>
@@ -39,9 +50,10 @@ function AboutPage() {
       </WhereScreen>
       <TeamPhotoScreen>
         <PhotoGrid>
-          {DATA.teamImages.map((it: string) => {
-            return <img src={`/resources/wdcc_photos/${it}`} alt={it} />;
-          })}
+          {DATA.teamMembers.map((item: TeamMember) => (
+            <img src={`/resources/wdcc_photos/${item.photoFileName}`} alt={item.photoFileName} />
+          )
+          )}
         </PhotoGrid>
       </TeamPhotoScreen>
       <Footer />

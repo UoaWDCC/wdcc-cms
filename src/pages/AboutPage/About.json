@@ -4,55 +4,84 @@
   "mainLink": "https://register.charities.govt.nz/CharitiesRegister/ViewCharity?accountId=71489b06-782a-ec11-8d9e-00155d5731b1&searchId=b52c8156-ff6d-47db-9579-fa2522f83201",
   "mainLinkText": "on the charities register",
   "teamTitle": "Your team for 2022",
-  "team": [
-    "President",
-    "Raymond Feng",
-    "Vice President",
-    "Joel Hutchinson",
-    "Treasurer",
-    "Daniel Torrey",
-    "Secretary",
-    "Brendan Zhou",
-    "Operations Director",
-    "Ellen Zhang",
-    "Marketing Director",
-    "Dhwani Thakar",
-    "Sponsorships & Outreach Director",
-    "Alex Zhuang",
-    "Consulting Director",
-    "Youxiang Lei",
-    "Projects Director",
-    "James You",
-    "Associate Projects Director",
-    "Jason Ko",
-    "Marketing Executive",
-    "Tony Cui",
-    "Marketing Executive",
-    "Lucy Zhu",
-    "General Executive",
-    "Lance Delos Reyes",
-    "General Executive",
-    "Josh Feng",
-    "General Executive",
-    "Eve Zhang"
+  "teamMembers":[
+    {
+      "name": "Raymond Feng",
+      "title": "President",
+      "photoFileName":"raymond_feng.jpg"
+    },
+    {
+      "name": "Joel Hutchinson",
+      "title": "Vice President",
+      "photoFileName":"joel_hutchinson.jpg"
+    },
+    {
+      "name": "Daniel Torrey",
+      "title": "Treasurer",
+      "photoFileName":"daniel_torrey.jpg"
+    },
+    {
+      "name": "Brendan Zhou",
+      "title": "Secretary",
+      "photoFileName":"brendan_zhou.jpg"
+    },
+    {
+      "name":  "Ellen Zhang",
+      "title": "Operations Director",
+      "photoFileName":"ellen_zhang.jpg"
+    },
+    {
+      "name":  "Dhwani Thakar",
+      "title": "Marketing Director",
+      "photoFileName":"dhwani_thakar.jpg"
+    },
+    {
+      "name":  "Alex Zhuang",
+      "title":   "Sponsorships & Outreach Director",
+      "photoFileName":"alex_zhuang.jpg"
+    },
+    {
+      "name": "Youxiang Lei",
+      "title": "Consulting Director",
+      "photoFileName": "youxiang_lei.jpg"
+    },
+    {
+      "name": "James You",
+      "title":  "Projects Director",
+      "photoFileName": "james_you.jpg"
+    },
+    {
+      "name": "Jason Ko",
+      "title":  "Associate Projects Director",
+      "photoFileName":"jason_ko.jpg"
+    },
+    {
+      "name":  "Tony Cui",
+      "title":  "Marketing Executive",
+      "photoFileName": "tony_cui.png"
+    },
+    {
+      "name":   "Lucy Zhu",
+      "title":   "Marketing Executive",
+      "photoFileName": "lucy_zhu.jpg"
+    },
+    {
+      "name":    "Lance Delos Reyes",
+      "title":  "General Executive",
+      "photoFileName": "lance_delos_reyes.png"
+    },
+    {
+      "name": "Josh Feng",
+      "title":  "General Executive",
+      "photoFileName": "josh_feng.jpg"
+    },
+    {
+      "name": "Eve Zhang",
+      "title":  "General Executive",
+      "photoFileName":   "eve_zhang.jpg"
+    }
+
   ],
   "teamDescription": "Wanting to join our team? Get in touch with us at",
-  "emailAdress": "secretary@wdcc.co.nz",
-  "teamImages": [
-    "joel_hutchinson.jpg",
-    "daniel_torrey.jpg",
-    "raymond_feng.jpg",
-    "dhwani_thakar.jpg",
-    "ellen_zhang.jpg",
-    "eve_zhang.jpg",
-    "james_you.jpg",
-    "alex_zhuang.jpg",
-    "jason_ko.jpg",
-    "lance_delos_reyes.png",
-    "lucy_zhu.jpg",
-    "brendan_zhou.jpg",
-    "tony_cui.png",
-    "youxiang_lei.jpg",
-    "josh_feng.jpg"
-  ]
+  "emailAdress": "secretary@wdcc.co.nz"
 }
