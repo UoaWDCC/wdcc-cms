@@ -1,72 +1,36 @@
 import { BannerBottom, Container } from "./Footer.styled";
 import discordJoinBtn from "../../resources/discord-min.png";
+import LinkItem from "../LinkItem";
 
+const DATA = require("./Footer.json");
 function Footer() {
   return (
     <>
       <Container>
         <div className={"discord-container"}>
-          <h4>Join the UoA Tech Clubs community!</h4>
+          <h4>{DATA.footerMsg}</h4>
           <a
-            href={"https://discord.gg/9AC6xeXXzu"}
-            target={"_blank"}
-            rel="noreferrer"
+            href={DATA.discord.link}
+            target={DATA.discord.target}
+            rel={DATA.discord.rel}
           >
-            <img src={discordJoinBtn} alt={"Join on discord button"} />
+            <img src={discordJoinBtn} alt={DATA.discord.alt} />
           </a>
         </div>
 
         <ul>
-          <li>
-            <a
-              href={"https://nz.linkedin.com/company/uoa-wdcc"}
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              <i className="fab fa-linkedin" />
-            </a>
-          </li>
-          <li>
-            <a
-              href={"https://www.facebook.com/uoa.wdcc"}
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              <i className="fab fa-facebook-square" />
-            </a>
-          </li>
-          <li>
-            <a
-              href={"https://www.instagram.com/uoa_wdcc/"}
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              <i className="fab fa-instagram-square" />
-            </a>
-          </li>
-          <li>
-            <a
-              href={"mailto:contact@wdcc.co.nz"}
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              <i className="fas fa-envelope" />
-            </a>
-          </li>
-          <li>
-            <a
-              href={"https://github.com/UoaWDCC"}
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              <i className="fab fa-github-square" />
-            </a>
-          </li>
+          {DATA.links.map((item: LinkItem) => (
+            <li>
+              <a href={item.link} target={item.target} rel={item.rel}>
+                <i className={item.icon} />
+              </a>
+            </li>
+          ))}
         </ul>
       </Container>
 
       <BannerBottom className={"banner-bottom"}>
-        <p>Powered by WDCC using React + TypeScript</p>
+        <p>{DATA.poweredBy}</p>
         <p>
           &copy; {new Date().getFullYear()} Web Development & Consulting Club
           Incorporated. All rights reserved.

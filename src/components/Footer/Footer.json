@@ -1,0 +1,44 @@
+{
+  "footerMsg": "Join the UoA Tech Clubs community!",
+  "discord": {
+    "link": "https://discord.gg/9AC6xeXXzu",
+    "target": "_blank",
+    "rel": "noreferrer",
+    "alt": "Join on discord button"
+  },
+
+  "links": [
+    {
+      "link": "https://nz.linkedin.com/company/uoa-wdcc",
+      "target": "_blank",
+      "rel": "noreferrer",
+      "icon": "fab fa-linkedin"
+    },
+    {
+      "link": "https://www.facebook.com/uoa.wdcc",
+      "target": "_blank",
+      "rel": "noreferrer",
+      "icon": "fab fa-facebook-square"
+    },
+    {
+      "link": "https://www.instagram.com/uoa_wdcc/",
+      "target": "_blank",
+      "rel": "noreferrer",
+      "icon": "fab fa-instagram-square"
+    },
+    {
+      "link": "mailto:contact@wdcc.co.nz",
+      "target": "_blank",
+      "rel": "noreferrer",
+      "icon": "fas fa-envelope"
+    },
+    {
+      "link": "https://github.com/UoaWDCC",
+      "target": "_blank",
+      "rel": "noreferrer",
+      "icon": "fab fa-github-square"
+    }
+  ],
+
+  "poweredBy": "Powered by WDCC using React + TypeScript"
+}
