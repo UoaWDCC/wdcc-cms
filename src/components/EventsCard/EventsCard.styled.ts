@@ -37,18 +37,18 @@ export const Container = styled.div`
     line-height: 2rem;
   }
 
-	.text {
+	.eventInfoContainer{
 		display: flex;
 		flex-direction: row;
 	}
 
-	.black {
+	.eventSchedule {
 		background-color: black;
     padding: 2rem 2rem 2rem 2rem;
 	}
 
-	.blue {
-		background-color: blue;
+	.eventSummary {
+		background-color:rgb(29, 96, 157);
     padding: 2rem 2rem 2rem 2rem;
 	}
 `;

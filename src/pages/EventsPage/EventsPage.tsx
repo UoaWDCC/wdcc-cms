@@ -8,7 +8,7 @@ function EventsPage() {
     <>
       <NavBar hasBg={true} />
       <Screen>Events!!</Screen>
-      <EventsCard photo="" month="Apr" date="8" series="Web Dev Essentials" title="HTML/CSS Workshop" location="201-439 Eng Building" time="10am-4pm"></EventsCard>
+      <EventsCard></EventsCard>
       <Footer />
     </>
   );
