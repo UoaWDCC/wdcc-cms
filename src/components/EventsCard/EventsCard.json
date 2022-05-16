@@ -1,0 +1,11 @@
+{
+  "photo": "../../resources/abount_grad.png",
+  "schedule": {
+    "month": "Aug",
+    "date": "23",
+    "time": "10am-4pm"
+  },
+  "series": "Web Dev Essentials",
+  "title": "HTML / CSS Workshop",
+  "location": "201-439 Eng Building"
+}
