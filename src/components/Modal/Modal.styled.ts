@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const Background = styled.div`
+export const ModalBackground = styled.div`
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
@@ -47,10 +47,10 @@ export const ModalWrapper = styled.div`
 
 export const ModalImg = styled.img`
   width: 80%;
-  height: 40vh;
-  background-size: cover;
-  border-radius: 3rem;
-  padding: 2rem;
+  height: 35vh;
+  object-fit: cover;
+  border-radius: 2.5rem;
+  padding: 1rem;
 
   @media (min-width: 576px) {
     display: none;
@@ -96,6 +96,27 @@ export const ModalButton = styled(FontAwesomeIcon)`
   z-index: 100;
 `;
 
+export const Container = styled.div`
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    color: #6a6666;
+  }
+
+  @media (min-width: 576px) {
+    > * {
+      padding: 0.25rem 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 0.75rem 0;
+  }
+`;
+
 export const Information = styled.div`
   display: flex;
   flex-direction: row;
@@ -126,26 +147,5 @@ export const Information = styled.div`
     div {
       font-size: 1.15rem;
     }
-  }
-`;
-
-export const Container = styled.div`
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  p {
-    color: #6a6666;
-  }
-
-  @media (min-width: 576px) {
-    > * {
-      padding: 0.25rem 0;
-    }
-  }
-
-  @media (min-width: 768px) {
-    padding: 0.75rem 0;
   }
 `;

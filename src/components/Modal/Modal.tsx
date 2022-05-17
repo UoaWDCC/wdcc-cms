@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import {
-  Background,
+  ModalBackground,
   ModalWrapper,
   ModalImg,
   ModalContent,
@@ -37,7 +37,7 @@ const Modal = ({ open, handleClose }: any) => {
   return (
     <>
       {open && (
-        <Background ref={modalRef} onClick={closeModal}>
+        <ModalBackground ref={modalRef} onClick={closeModal}>
           <ModalWrapper>
             {/* Close Button */}
             <ModalButton icon={faXmark} onClick={handleClose} />
@@ -81,7 +81,7 @@ const Modal = ({ open, handleClose }: any) => {
               </p>
             </Container>
           </ModalWrapper>
-        </Background>
+        </ModalBackground>
       )}
     </>
   );
