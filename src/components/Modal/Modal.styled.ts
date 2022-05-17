@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Background = styled.div`
   width: 100%;
@@ -16,6 +17,7 @@ export const ModalWrapper = styled.div`
   height: 80%;
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #fff;
@@ -57,7 +59,7 @@ export const ModalContent = styled.div`
   }
 `;
 
-export const ModalButton = styled.div`
+export const ModalButton = styled(FontAwesomeIcon)`
   cursor: pointer;
   position: absolute;
   top: 20px;
@@ -65,7 +67,7 @@ export const ModalButton = styled.div`
   width: 32px;
   height: 32px;
   padding: 0;
-  z-index: 10;
+  z-index: 100;
 `;
 
 export const Information = styled.div`

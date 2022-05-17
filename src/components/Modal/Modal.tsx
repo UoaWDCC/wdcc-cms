@@ -9,6 +9,7 @@ import {
   Container,
 } from "./Modal.styled";
 
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 const Modal = ({ open, handleClose }: any) => {
   // Logic which handles modal close upon clicking the background
   const modalRef: any = useRef();
@@ -32,17 +33,16 @@ const Modal = ({ open, handleClose }: any) => {
       {open && (
         <Background ref={modalRef} onClick={closeModal}>
           <ModalWrapper>
+            <ModalButton icon={faXmark} />
             <ModalContent>
               <h5>web dev essentials</h5>
               <h1>html/css workshop</h1>
             </ModalContent>
-            <ModalButton />
             <ModalImg
               src={
                 "https://media.itpro.co.uk/image/upload/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1627554145/itpro/google_sign_mountain_view_shutterstock.jpg"
               }
             />
-
             <Container>
               <Information>
                 <div>401-439 engineering building</div>
