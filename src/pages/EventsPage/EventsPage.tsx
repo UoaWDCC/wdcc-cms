@@ -5,16 +5,17 @@ import NavBar from "../../components/NavBar/NavBar";
 import Screen from "../../styles/Screen";
 
 function EventsPage() {
-  const [openModal, setOpenModal] = useState(false);
+  const [open, setOpen] = useState(false);
 
-  const modalButton = () => {
-    setOpenModal((prev) => !prev);
-  };
+  const handleOpen = () => setOpen(true);
+
+  const handleClose = () => setOpen(false);
   return (
     <>
-      {openModal && <Modal modalButton={modalButton} />}
+      <Modal handleClose={handleClose} open={open} />
+
       <NavBar hasBg={true} />
-      <button onClick={modalButton}>click me to open modal!</button>
+      <button onClick={handleOpen}>click me to open modal!</button>
       <Screen>Events!!</Screen>
 
       <Footer />
