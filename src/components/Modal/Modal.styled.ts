@@ -13,8 +13,6 @@ export const ModalBackground = styled.div`
 `;
 
 export const ModalWrapper = styled.div`
-  width: 60%;
-  height: 80%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -26,23 +24,15 @@ export const ModalWrapper = styled.div`
   border-radius: 10px;
   overflow-y: auto;
 
-@media (min-width: 576px) { 
-  width:80%;
-  height: 70%;
-}
+  @media (min-width: 576px) {
+    width: 80%;
+    height: 70%;
+  }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1244px) { 
-
-  width:60%;
-  height:80%;
- }
+  @media (min-width: 1244px) {
+    width: 60%;
+    height: 80%;
+  }
 `;
 
 export const ModalImg = styled.img`
@@ -94,6 +84,11 @@ export const ModalButton = styled(FontAwesomeIcon)`
   height: 32px;
   padding: 0;
   z-index: 100;
+  color: rgba(0, 0, 0, 1);
+  :hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  transition: all 500ms ease-in;
 `;
 
 export const Container = styled.div`
