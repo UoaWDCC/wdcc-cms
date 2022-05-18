@@ -28,7 +28,10 @@ import {
   InitiativesScreenContent,
   InitiativesButton,
   ParticlesJS,
+  EventScreen,
+  EventContainer,
 } from "./IndexPage.styled";
+import EventsCard from "../../components/EventsCard/EventsCard";
 const DATA = require("./Index.json");
 export default function IndexPage() {
   // @ts-ignore
@@ -71,6 +74,16 @@ export default function IndexPage() {
 
         <img src={combinedBanner} alt={"Hackathon photos"} />
       </JoinScreen>
+
+      <EventScreen>
+        <div>
+          <h1>Upcoming events</h1>
+          <EventContainer>
+            <EventsCard />
+            <EventsCard />
+          </EventContainer>
+        </div>
+      </EventScreen>
 
       <InitiativesScreen>
         <InitiativesScreenGradient />

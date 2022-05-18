@@ -174,6 +174,27 @@ export const JoinButton = styled(OutlinedButton)`
   text-decoration: none;
 `;
 
+export const EventScreen = styled(Screen)`
+  min-height: 0;
+`;
+
+export const EventContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 40px 0 40px 0;
+  overflow: hidden;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+    gap: 40px;
+    justify-content: flex-end;
+  }
+  .eventInfoContainer {
+    justify-content: center;
+  }
+`;
+
 export const InitiativesScreen = styled(Screen)`
   background-color: rgb(49, 126, 187);
   color: white;
