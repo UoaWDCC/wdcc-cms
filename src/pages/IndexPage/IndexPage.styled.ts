@@ -183,11 +183,15 @@ export const EventContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   padding: 40px 0 40px 0;
+  overflow: hidden;
 
   @media (max-width: 950px) {
     flex-direction: column;
     gap: 40px;
     justify-content: flex-end;
+  }
+  .eventInfoContainer {
+    justify-content: center;
   }
 `;
 
