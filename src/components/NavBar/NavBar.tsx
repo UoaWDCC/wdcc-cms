@@ -11,15 +11,15 @@ function NavBar({ hasBg }: { hasBg?: boolean }) {
 
   const location = useLocation();
 
-  const listItems: NavItem[] = DATA.navItems.map(function (navItem: {
+  const listItems: NavItem[] = DATA.navItems.map((navItem: {
     displayName: string;
     link: string;
-  }) {
-    return {
+  }) => (
+    {
       displayName: navItem.displayName,
       link: navItem.link,
-    };
-  });
+    }
+  ));
 
   listItems.map((listItem) => {
     const isActive =
