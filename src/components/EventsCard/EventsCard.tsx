@@ -1,19 +1,19 @@
+import EventDetails from "../EventDetails";
 import { Container } from "./EventsCard.styled";
 
-const DATA = require("./EventsCard.json");
-function EventsCard() {
+function EventsCard({ data }: { data: EventDetails }) {
   return (
     <Container>
+      <img src="" alt="" />
       <div className="eventInfoContainer">
         <div className="eventSchedule">
-          <p>{DATA.schedule.month}</p>
-          <h2>{DATA.schedule.date}</h2>
+          <h2>{data.schedule.date}</h2>
         </div>
         <div className="eventSummary">
-          <p>{DATA.series}</p>
-          <h1>{DATA.title}</h1>
-          <p>{DATA.location}</p>
-          <p>{DATA.schedule.time}</p>
+          <p>{data.series}</p>
+          <h1>{data.title}</h1>
+          <p>{data.location}</p>
+          <p>{data.schedule.time}</p>
         </div>
       </div>
     </Container>
