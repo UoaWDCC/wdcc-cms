@@ -1,11 +1,24 @@
-{
-  "photo": "../../resources/abount_grad.png",
-  "schedule": {
-    "month": "Aug",
-    "date": "23",
-    "time": "10am-4pm"
+[
+  {
+    "photo": "../../resources/abount_grad.png",
+    "schedule": {
+      "month": "Aug",
+      "date": "23",
+      "time": "10am-4pm"
+    },
+    "series": "Web Dev Essentials",
+    "title": "HTML / CSS Workshop",
+    "location": "201-439 Eng Building"
   },
-  "series": "Web Dev Essentials",
-  "title": "HTML / CSS Workshop",
-  "location": "201-439 Eng Building"
-}
+  {
+    "photo": "../../resources/media/HACKATHON-021.jpg",
+    "schedule": {
+      "month": "Sep",
+      "date": "28",
+      "time": "10am-4pm"
+    },
+    "series": "Web Dev Essentials",
+    "title": "HTML / CSS Workshop",
+    "location": "201-439 Eng Building"
+  }
+]

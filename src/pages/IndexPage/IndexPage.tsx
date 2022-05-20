@@ -8,6 +8,7 @@ import "particles.js";
 
 import combinedBanner from "../../resources/combined_banner.png";
 import InitiativeCard from "../../components/InitiativeCard/InitiativeCard";
+import EventsCards from "../../components/EventsCard/EventsCards";
 
 import projectIcon from "../../resources/wdcc_icon_project.png";
 import eventIcon from "../../resources/wdcc_icon_event.png";
@@ -31,7 +32,7 @@ import {
   EventScreen,
   EventContainer,
 } from "./IndexPage.styled";
-import EventsCard from "../../components/EventsCard/EventsCard";
+
 const DATA = require("./Index.json");
 export default function IndexPage() {
   // @ts-ignore
@@ -79,8 +80,8 @@ export default function IndexPage() {
         <div>
           <h1>Upcoming events</h1>
           <EventContainer>
-            <EventsCard />
-            <EventsCard />
+            <EventsCards />
+
           </EventContainer>
         </div>
       </EventScreen>
