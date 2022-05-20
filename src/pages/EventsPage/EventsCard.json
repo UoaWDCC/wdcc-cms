@@ -1,8 +1,7 @@
 {
   "photo": "../../resources/abount_grad.png",
   "schedule": {
-    "month": "Aug",
-    "date": "23",
+    "date": "Aug 23",
     "time": "10am-4pm"
   },
   "series": "Web Dev Essentials",
