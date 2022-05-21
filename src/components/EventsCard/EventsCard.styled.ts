@@ -63,6 +63,6 @@ export const EventSummary = styled.div`
     color: white;
     font-size: 0.8rem;
     font-weight: normal;
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
 `;
