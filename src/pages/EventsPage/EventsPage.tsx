@@ -3,6 +3,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import Screen from "../../styles/Screen";
 import EventsCard from "../../components/EventsCard/EventsCard";
 import EventDetails from "../../components/EventDetails";
+import { Container } from "./EventsPage.styled";
 
 const DATA = require("./EventsCard.json");
 function EventsPage() {
@@ -18,8 +19,40 @@ function EventsPage() {
     <>
       <NavBar hasBg={true} />
       <Screen>
-        Events!!
-        <EventsCard data={details} />
+        <Container>
+          <EventsCard
+            photo={details.photo}
+            date={details.date}
+            subtitle={details.series}
+            title={details.title}
+            location={details.location}
+            time={details.time}
+          />
+          <EventsCard
+            photo={details.photo}
+            date={details.date}
+            subtitle={details.series}
+            title={details.title}
+            location={details.location}
+            time={details.time}
+          />
+          <EventsCard
+            photo={details.photo}
+            date={details.date}
+            subtitle={details.series}
+            title={details.title}
+            location={details.location}
+            time={details.time}
+          />
+          <EventsCard
+            photo={details.photo}
+            date={details.date}
+            subtitle={details.series}
+            title={details.title}
+            location={details.location}
+            time={details.time}
+          />
+        </Container>
       </Screen>
 
       <Footer />

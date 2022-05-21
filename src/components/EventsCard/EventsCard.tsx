@@ -1,27 +1,43 @@
 import EventDetails from "../EventDetails";
-import { Container } from "./EventsCard.styled";
-import { EventInfo } from "./EventsCard.styled";
-import { EventSchedule } from "./EventsCard.styled";
-import { EventSummary } from "./EventsCard.styled";
-import { Image } from "./EventsCard.styled";
+import {
+  Container,
+  EventInfo,
+  EventSchedule,
+  EventSummary,
+  Image,
+} from "./EventsCard.styled";
 
-function EventsCard({ data }: { data: EventDetails }) {
-  console.log(data);
+interface EventsCardProps {
+  photo: string;
+  date: string;
+  subtitle: string;
+  title: string;
+  location: string;
+  time: string;
+}
 
+function EventsCard({
+  photo,
+  date,
+  subtitle,
+  title,
+  location,
+  time,
+}: EventsCardProps) {
   return (
     <Container>
-      <Image>
-        <img src={require(`../../resources${data.photo}`).default} alt="" />
-      </Image>
+      <Image src={require(`../../resources${photo}`).default} alt="" />
       <EventInfo>
         <EventSchedule>
-          <h2>{data.date}</h2>
+          <h4>{date}</h4>
         </EventSchedule>
         <EventSummary>
-          <p>{data.series}</p>
-          <h1>{data.title}</h1>
-          <p>{data.location}</p>
-          <p>{data.time}</p>
+          <div>
+            <p>{subtitle}</p>
+            <p>{title}</p>
+            <p>{location}</p>
+          </div>
+          <h6>{time}</h6>
         </EventSummary>
       </EventInfo>
     </Container>
