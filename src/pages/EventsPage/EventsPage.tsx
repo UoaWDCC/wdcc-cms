@@ -8,7 +8,8 @@ const DATA = require("./EventsCard.json");
 function EventsPage() {
   const details: EventDetails = {
     photo: DATA.photo,
-    schedule: { date: DATA.date, time: DATA.time },
+    date: DATA.date,
+    time: DATA.time,
     series: DATA.series,
     title: DATA.title,
     location: DATA.location,

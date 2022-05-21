@@ -1,54 +1,59 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  position: relative;
-  margin: 0 20px;
-  // padding: 30px;
-	border-radius: 30px;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  flex-direction: column;
+  width: 30%;
+  padding-top: 100%;
+  align-items: stretch;
+  align-content: flex-start;
+  `
+export const Image = styled.div`
+  margin: 0;
+  padding: 0;
+  height: 30%;
+img {
+  width: 100%;
+  object-fit: contain;
+}
+`
+export const EventInfo = styled.div`
+
+  margin: 0;
+  padding: 0;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
   color: white;
+  
+`
 
-  // width: 400px;
-  // max-width: 100%;
-  // min-width: 300px;
+export const EventSchedule = styled.div`
+h2 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+  background-color: black;
+  width : 30%;
+  height: fit;
+`
 
-  // &:nth-child(2n) {
-  //   background-color: #f5f5f5;
-  // }
+export const EventSummary = styled.div`
 
-  div {
-    // height: 150px;
-    // width: 200px;
-    // margin: 0 auto 50px auto;
-  }
-
-  img {
-    max-width: 100%;
-    width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-  }
-
-  h2 {
-    text-align: center;
-  }
-
+  background-color:rgb(29, 96, 157);
+  width : 70%;
+  height: 100%;
   p {
+    padding: 1rem;
     text-align: left;
-    line-height: 2rem;
+    line-height: 1rem;
+  white-space: initial;
+
   }
-
-	.eventInfoContainer{
-		display: flex;
-		flex-direction: row;
-	}
-
-	.eventSchedule {
-		background-color: black;
-    padding: 2rem 2rem 2rem 2rem;
-	}
-
-	.eventSummary {
-		background-color:rgb(29, 96, 157);
-    padding: 2rem 2rem 2rem 2rem;
-	}
-`;
+  h1 {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+`

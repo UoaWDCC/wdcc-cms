@@ -1,10 +1,8 @@
 {
-  "photo": "../../resources/abount_grad.png",
-  "schedule": {
-    "date": "Aug 23",
-    "time": "10am-4pm"
-  },
+  "photo": "/about_grad.png",
+  "date": "Aug 23",
+  "time": "10am-4pm",
   "series": "Web Dev Essentials",
-  "title": "HTML / CSS Workshop",
+  "title": "AJSDL;FJASDL;FJLAKSJFLASJLD;FJALS;DJFLASASDFASLFLKASJDLKJFLKSJDKLFJSLDJFLASJDFLKAJSKDFJLKSDJFKLJSDFD",
   "location": "201-439 Eng Building"
 }
