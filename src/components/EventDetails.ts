@@ -1,9 +1,7 @@
 interface EventDetails {
-    photo: any;
-    schedule: {
+    photo: string;
       date: string;
       time: string;
-    };
     series: string;
     title: string;
     location: string;
