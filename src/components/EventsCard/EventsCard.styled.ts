@@ -6,8 +6,8 @@ export const Container = styled.div`
   height: 25rem;
   display: flex;
   flex-direction: column;
-  min-width: 25%;
-  padding: 0 0.5rem;
+  max-width: 22%;
+  margin: 0.5rem 0rem;
 `;
 
 export const Image = styled.img`
@@ -40,7 +40,7 @@ export const EventSummary = styled.div`
 
   // contains subsection, title and loc
   div {
-    padding: 1.75rem 3rem;
+    padding: 1.75rem 0 3rem 1.75rem;
   }
 
   div :nth-child(-n + 2) {
