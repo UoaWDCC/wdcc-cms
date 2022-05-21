@@ -52,6 +52,38 @@ function EventsPage() {
             location={details.location}
             time={details.time}
           />
+          <EventsCard
+            photo={details.photo}
+            date={details.date}
+            subtitle={details.series}
+            title={details.title}
+            location={details.location}
+            time={details.time}
+          />
+          <EventsCard
+            photo={details.photo}
+            date={details.date}
+            subtitle={details.series}
+            title={details.title}
+            location={details.location}
+            time={details.time}
+          />
+          <EventsCard
+            photo={details.photo}
+            date={details.date}
+            subtitle={details.series}
+            title={details.title}
+            location={details.location}
+            time={details.time}
+          />
+          <EventsCard
+            photo={details.photo}
+            date={details.date}
+            subtitle={details.series}
+            title={details.title}
+            location={details.location}
+            time={details.time}
+          />
         </Container>
       </Screen>
 
