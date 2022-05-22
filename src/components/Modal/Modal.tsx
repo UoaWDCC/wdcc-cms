@@ -25,7 +25,7 @@ interface ModalProps {
     date: string;
     time: string;
   };
-  series: string;
+  subtitle: string;
   title: string;
   location: string;
 }
@@ -36,7 +36,7 @@ const Modal = ({
   information,
   photo,
   schedule,
-  series,
+  subtitle,
   title,
   location,
 }: ModalProps) => {
@@ -67,7 +67,7 @@ const Modal = ({
 
             {/* Title */}
             <ModalContent>
-              <h5>{series}</h5>
+              <h5>{subtitle}</h5>
               <h1>{title}</h1>
             </ModalContent>
 
