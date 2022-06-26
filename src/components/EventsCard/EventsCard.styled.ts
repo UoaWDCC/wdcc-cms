@@ -60,18 +60,18 @@ export const Container = styled.div`
   height: 25rem;
   display: flex;
   flex-direction: column;
-  max-width: 22%;
+  max-width: 22rem;
   margin: 0.5rem 0rem;
   @media (max-width: 1280px) {
-    max-width: 30%;
+    max-width: 30rem;
     padding: 0 0.5rem 0.5rem 0;
   }
   @media (max-width: 820px) {
-    max-width: 45%;
+    max-width: 45rem;
     padding: 0 0.5rem 0.5rem 0;
   }
   @media (max-width: 600px) {
-    max-width: 100%;
+    max-width: 100rem;
     padding: 0 0.5rem 0.5rem 0;
   }
 `;

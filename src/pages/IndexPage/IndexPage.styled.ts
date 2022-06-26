@@ -109,11 +109,14 @@ export const SponsorGrid = styled.div`
   flex-direction:column;
   justify-content:center;
 
-  max-width: 1200px;
+  // max-width: 1200px;
 
   img {
     width: 50rem;
     z-index: -1;
+  }
+  @media (max-width:1280px) {
+    width:45rem;
   }
   @media (max-width: 1000px) {
     img {
@@ -133,16 +136,48 @@ export const SponsorGrid = styled.div`
   }
 `;
 
+export const EventGrid = styled.div`
+  
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+  height:100%;
+  width:100%;
+
+  h1{
+    padding:2rem;
+  }
+// background-color: grey;
+
+
+  @media (max-width: 1000px) {
+    img {
+      width:100%;
+    }
+  }
+
+  // @media (max-width: 700px) {
+  //   h1 {
+  //     padding: 0 20px;
+  //     margin: 0;
+  //     font-size: 1.5rem;
+  //   }
+  //   grid-template-columns: 1fr;
+  //   grid-template-rows: auto 1fr;
+  //   text-align: center;
+  }
+`;
 export const SponsorsScreen = styled(Screen)`
   display: flex;
   min-height: 0;
 
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   color: #183249;
-  @media (max-width: 1000px) {
-    flex-direction: column;
-  }
+  // @media (max-width: 1280px) {
+  //   flex-direction: column;
+  //   align-items: start;
+  // }
 
   @media (max-width: 700px) {
     padding: 40px 0;
