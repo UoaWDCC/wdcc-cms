@@ -6,7 +6,12 @@ import EVENTS_DATA from "./EventsCard.json";
 function EventsCards() {
   return (
     <>
-      {EVENTS_DATA.map((eventData) => <EventsCard {...eventData} />)}
+      {EVENTS_DATA.map(
+        (eventData, i) =>
+          i < 1 && (
+            <EventsCard date={""} subtitle={""} time={""} {...eventData} />
+          )
+      )}
     </>
   );
 }

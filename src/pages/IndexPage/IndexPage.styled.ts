@@ -99,36 +99,50 @@ export const InitiativeContainer = styled.div`
 `;
 
 export const SponsorGrid = styled.div`
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  // margin: 0 auto;
+  // display: grid;
+  // grid-template-columns: 1fr 3fr;
 
-  align-items: center;
+  // align-items: center;
+  
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 
   max-width: 1200px;
 
   img {
-    width: 100%;
-    position: relative;
+    width: 50rem;
     z-index: -1;
   }
-
-  @media (max-width: 700px) {
-    h1 {
-      padding: 0 20px;
-      margin: 0;
-      font-size: 1.5rem;
+  @media (max-width: 1000px) {
+    img {
+      width:100%;
     }
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    text-align: center;
+  }
+
+  // @media (max-width: 700px) {
+  //   h1 {
+  //     padding: 0 20px;
+  //     margin: 0;
+  //     font-size: 1.5rem;
+  //   }
+  //   grid-template-columns: 1fr;
+  //   grid-template-rows: auto 1fr;
+  //   text-align: center;
   }
 `;
 
 export const SponsorsScreen = styled(Screen)`
+  display: flex;
   min-height: 0;
 
+  justify-content: space-between;
+  align-items: center;
   color: #183249;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 
   @media (max-width: 700px) {
     padding: 40px 0;
@@ -174,15 +188,25 @@ export const JoinButton = styled(OutlinedButton)`
   text-decoration: none;
 `;
 
-export const EventScreen = styled(Screen)`
+export const EventScreen = styled.div`
   min-height: 0;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50px 75px;
+
+  overflow: hidden;
+
+  @media (max-width: 700px) {
+    padding: 50px 30px;
+  }
 `;
 
 export const EventContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 40px 0 40px 0;
+  padding: 10px 0 20px 0;
   overflow: hidden;
 
   @media (max-width: 950px) {

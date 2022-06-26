@@ -8,7 +8,7 @@ import "particles.js";
 
 import combinedBanner from "../../resources/combined_banner.png";
 import InitiativeCard from "../../components/InitiativeCard/InitiativeCard";
-import EventsCards from "../../components/EventsCard/EventsCards";
+import EventsCard from "../../components/EventsCard/EventsCard";
 
 import projectIcon from "../../resources/wdcc_icon_project.png";
 import eventIcon from "../../resources/wdcc_icon_event.png";
@@ -16,6 +16,7 @@ import workshopIcon from "../../resources/wdcc_icon_workshop.png";
 import computerIcon from "../../resources/computer_icon.png";
 import sponsors from "../../resources/wdcc_sponsors.png";
 
+import EventDetails from "../../components/EventDetails";
 import {
   Splash,
   SplashContent,
@@ -34,14 +35,23 @@ import {
 } from "./IndexPage.styled";
 
 const DATA = require("./Index.json");
+
+const EVENT_DATA = require("../EventsPage/EventsCard.json");
 export default function IndexPage() {
   // @ts-ignore
   particlesJS.load("particles-js", "resources/particlesjs-config.json");
 
+  const details: EventDetails = {
+    photo: EVENT_DATA.photo,
+    date: EVENT_DATA.date,
+    time: EVENT_DATA.time,
+    series: EVENT_DATA.series,
+    title: EVENT_DATA.title,
+    location: EVENT_DATA.location,
+  };
   return (
     <>
       <NavBar />
-
       <Splash>
         <ParticlesJS id={"particles-js"} />
         <SplashContent>
@@ -58,8 +68,18 @@ export default function IndexPage() {
       <SponsorsScreen>
         <SponsorGrid>
           <h1>{DATA.sponsorText}</h1>
+
           <img src={sponsors} alt={"WDCC Sponsors 2022"} />
         </SponsorGrid>
+
+        <EventsCard
+          photo={details.photo}
+          date={details.date}
+          subtitle={details.series}
+          title={details.title}
+          location={details.location}
+          time={details.time}
+        />
       </SponsorsScreen>
 
       <JoinScreen>
@@ -76,15 +96,12 @@ export default function IndexPage() {
         <img src={combinedBanner} alt={"Hackathon photos"} />
       </JoinScreen>
 
-      <EventScreen>
-        <div>
-          <h1>Upcoming events</h1>
-          <EventContainer>
-            <EventsCards />
-
-          </EventContainer>
-        </div>
-      </EventScreen>
+      {/* <EventScreen>
+        <h1>Upcoming events</h1>
+        <EventContainer>
+          <EventsCards />
+        </EventContainer>
+      </EventScreen> */}
 
       <InitiativesScreen>
         <InitiativesScreenGradient />
