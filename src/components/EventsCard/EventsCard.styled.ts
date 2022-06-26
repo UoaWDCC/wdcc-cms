@@ -8,6 +8,21 @@ export const Container = styled.div`
   flex-direction: column;
   max-width: 22%;
   margin: 0.5rem 0rem;
+
+  @media (max-width: 1280px) {
+    max-width: 30%;
+    padding: 0 0.5rem 0.5rem 0;
+  }
+
+  @media (max-width: 820px) {
+    max-width: 45%;
+    padding: 0 0.5rem 0.5rem 0;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 100%;
+    padding: 0 0.5rem 0.5rem 0;
+  }
 `;
 
 export const Image = styled.img`
@@ -41,6 +56,15 @@ export const EventSummary = styled.div`
   // contains subsection, title and loc
   div {
     padding: 1.75rem 0 3rem 1.75rem;
+  }
+
+  @media (max-width: 1280px) {
+    div {
+      padding: 0.5rem 0rem 2.5rem 1rem;
+    }
+    h6 {
+      padding: 0 1rem !important;
+    }
   }
 
   div :nth-child(-n + 2) {
