@@ -1,0 +1,47 @@
+import EventDetails from "../EventDetails";
+import {
+  Container,
+  EventInfo,
+  EventSchedule,
+  EventSummary,
+  Image,
+} from "./EventsCardPreview.styled";
+
+interface EventsCardProps {
+  photo: string;
+  date: string;
+  subtitle: string;
+  title: string;
+  location: string;
+  time: string;
+}
+
+function EventsCard({
+  photo,
+  date,
+  subtitle,
+  title,
+  location,
+  time,
+}: EventsCardProps) {
+  return (
+    <Container>
+      <Image src={require(`../../resources${photo}`).default} alt="" />
+      <EventInfo>
+        <EventSchedule>
+          <h4>{date}</h4>
+        </EventSchedule>
+        <EventSummary>
+          <div>
+            <p>{subtitle}</p>
+            <p>{title}</p>
+            <p>{location}</p>
+          </div>
+          <h6>{time}</h6>
+        </EventSummary>
+      </EventInfo>
+    </Container>
+  );
+}
+
+export default EventsCard;
