@@ -4,6 +4,7 @@ import {
   EventInfo,
   EventSchedule,
   EventSummary,
+  EventImg,
   Image,
 } from "./EventsCardPreview.styled";
 
@@ -16,7 +17,7 @@ interface EventsCardProps {
   time: string;
 }
 
-function EventsCard({
+function EventsCardPreview({
   photo,
   date,
   subtitle,
@@ -26,10 +27,13 @@ function EventsCard({
 }: EventsCardProps) {
   return (
     <Container>
-      <Image src={require(`../../resources${photo}`).default} alt="" />
+      <EventImg>
+        <Image src={require(`../../resources${photo}`).default} alt="" />
+      </EventImg>
       <EventInfo>
         <EventSchedule>
           <h4>{date}</h4>
+          <h6>{time}</h6>
         </EventSchedule>
         <EventSummary>
           <div>
@@ -37,11 +41,10 @@ function EventsCard({
             <p>{title}</p>
             <p>{location}</p>
           </div>
-          <h6>{time}</h6>
         </EventSummary>
       </EventInfo>
     </Container>
   );
 }
 
-export default EventsCard;
+export default EventsCardPreview;

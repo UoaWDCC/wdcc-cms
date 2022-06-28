@@ -99,17 +99,10 @@ export const InitiativeContainer = styled.div`
 `;
 
 export const SponsorGrid = styled.div`
-  // margin: 0 auto;
-  // display: grid;
-  // grid-template-columns: 1fr 3fr;
 
-  // align-items: center;
-  
   display:flex;
   flex-direction:column;
   justify-content:center;
-
-  // max-width: 1200px;
 
   img {
     width: 50rem;
@@ -139,17 +132,22 @@ export const SponsorGrid = styled.div`
 export const EventGrid = styled.div`
   
   display:flex;
-  flex-direction:column;
-  justify-content: space-around;
+  flex-direction: column;
   height:100%;
-  width:100%;
+  max-width:30vw;
+  min-width: 300px;
+  margin: 0;
+  justify-contents: center;
+
+  background-color: rgb(211,211,211);
+  border: 5px solid rgb(180,180,180);
+  border-radius: 1rem;
 
   h1{
-    padding:2rem;
+    padding: 1rem;
+    margin: 0;
   }
-// background-color: grey;
-
-
+   
   @media (max-width: 1000px) {
     img {
       width:100%;

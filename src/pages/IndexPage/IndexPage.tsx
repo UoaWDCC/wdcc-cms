@@ -8,7 +8,7 @@ import "particles.js";
 
 import combinedBanner from "../../resources/combined_banner.png";
 import InitiativeCard from "../../components/InitiativeCard/InitiativeCard";
-import EventsCard from "../../components/EventsCard/EventsCard";
+import EventsCardPreview from "../../components/EventsCard/EventsCardPreview";
 
 import projectIcon from "../../resources/wdcc_icon_project.png";
 import eventIcon from "../../resources/wdcc_icon_event.png";
@@ -73,7 +73,7 @@ export default function IndexPage() {
         </SponsorGrid>
         <EventGrid>
           <h1>Upcoming Events</h1>
-          <EventsCard
+          <EventsCardPreview
             photo={details.photo}
             date={details.date}
             subtitle={details.series}

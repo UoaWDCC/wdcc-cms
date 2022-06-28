@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin: 0;
+  margin: 1rem;
   padding: 0;
-  height: 25rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 22rem;
+  justify-self: center;
+  width: 90%;
+
   margin: 0.5rem 0rem;
   @media (max-width: 1280px) {
     max-width: 25rem;
@@ -22,9 +24,13 @@ export const Container = styled.div`
     padding: 0 0.5rem 0.5rem 0;
   }
 `;
+export const EventImg = styled.div`
+  display: flex;
+  justify-conten: center;
+  width: 100%;
+`;
 
 export const Image = styled.img`
-  height: 100%;
   width: 100%;
   object-fit: cover;
 `;
@@ -39,17 +45,30 @@ export const EventInfo = styled.div`
 
 export const EventSchedule = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #272727;
   width: 20%;
-  height: 100%;
+
+  h4,
+  h6 {
+    margin: 0.7rem;
+  }
+
+  @media (max-width: 1280px) {
+    h6 {
+      color: white;
+      font-size: 0.8rem;
+      font-weight: normal;
+      padding: 0 2rem;
+    }
+  }
 `;
 
 export const EventSummary = styled.div`
   background-color: rgb(29, 96, 157);
   width: 80%;
-  height: 100%;
   // contains subsection, title and loc
   div {
     padding: 1.75rem 0 3rem 1.75rem;
@@ -57,9 +76,6 @@ export const EventSummary = styled.div`
   @media (max-width: 1280px) {
     div {
       padding: 0.5rem 0rem 2.5rem 1rem;
-    }
-    h6 {
-      padding: 0 1rem !important;
     }
   }
   div :nth-child(-n + 2) {
@@ -74,11 +90,5 @@ export const EventSummary = styled.div`
   div :nth-child(odd) {
     color: rgba(256, 256, 256, 0.45);
     font-size: 0.75rem;
-  }
-  h6 {
-    color: white;
-    font-size: 0.8rem;
-    font-weight: normal;
-    padding: 0 2rem;
   }
 `;
