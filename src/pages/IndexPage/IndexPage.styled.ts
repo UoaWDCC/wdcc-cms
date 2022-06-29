@@ -105,16 +105,22 @@ export const SponsorGrid = styled.div`
   justify-content:center;
 
   img {
-    width: 50rem;
+    width: 95%;
     z-index: -1;
   }
-  @media (max-width:1280px) {
-    width:45rem;
-  }
-  @media (max-width: 1000px) {
+
+  @media (max-width: 1280px) {
     img {
       width:100%;
     }
+  }
+
+  @media (max-width: 950px) {
+    max-width: 90%;
+  }
+  
+  @media (max-width: 783px) {
+    max-width: 100%;
   }
 
   // @media (max-width: 700px) {
@@ -130,7 +136,7 @@ export const SponsorGrid = styled.div`
 `;
 
 export const EventGrid = styled.div`
-  
+
   display:flex;
   flex-direction: column;
   height:100%;
@@ -139,14 +145,14 @@ export const EventGrid = styled.div`
   margin: 0;
   justify-contents: center;
 
-  background-color: rgb(211,211,211);
-  border: 5px solid rgb(180,180,180);
-  border-radius: 1rem;
+  // background-color: rgb(211,211,211);
+  // border: 5px solid rgb(180,180,180);
+  // border-radius: 0.5rem;
 
-  h1{
-    padding: 1rem;
-    margin: 0;
-  }
+  // h1{
+  //   padding: 0.5rem;
+  //   margin: 0;
+  // }
    
   @media (max-width: 1000px) {
     img {
@@ -163,6 +169,15 @@ export const EventGrid = styled.div`
   //   grid-template-columns: 1fr;
   //   grid-template-rows: auto 1fr;
   //   text-align: center;
+
+  @media (max-width: 950px) {
+    max-width: 15rem;
+  }
+  
+  @media (max-width: 783px) {
+    max-width: 30rem;
+    align-items: center;
+  }
   }
 `;
 export const SponsorsScreen = styled(Screen)`
@@ -170,15 +185,16 @@ export const SponsorsScreen = styled(Screen)`
   min-height: 0;
 
   justify-content: space-between;
-  align-items: end;
+  align-items: start;
   color: #183249;
   // @media (max-width: 1280px) {
   //   flex-direction: column;
   //   align-items: start;
   // }
 
-  @media (max-width: 700px) {
-    padding: 40px 0;
+  @media (max-width: 783px) {
+    padding: 50px 30px;
+    flex-direction: column;
   }
 `;
 

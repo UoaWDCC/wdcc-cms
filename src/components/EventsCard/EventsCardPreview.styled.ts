@@ -9,15 +9,14 @@ export const Container = styled.div`
   justify-self: center;
   width: 90%;
 
-  margin: 0.5rem 0rem;
   @media (max-width: 1280px) {
-    max-width: 25rem;
-    padding: 0 0.5rem 0.5rem 0;
+    max-width: 19rem;
+    // padding: 0 0 0.5rem 0;
   }
   @media (max-width: 950px) {
-    max-width: 20rem;
-    max-height: 20rem;
-    padding: 0 0.5rem 0.5rem 0;
+    max-width: 15rem;
+    // max-height: 20rem;
+    // padding: 0 0.5rem 0.5rem 0;
   }
   @media (max-width: 783px) {
     max-width: 100rem;
