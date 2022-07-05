@@ -1,4 +1,6 @@
+import { useState } from "react";
 import EventDetails from "../EventDetails";
+import Modal from "../Modal/Modal";
 import {
   Container,
   EventInfo,
@@ -14,6 +16,7 @@ interface EventsCardProps {
   title: string;
   location: string;
   time: string;
+  handleOpen: () => void;
 }
 
 function EventsCard({
@@ -23,9 +26,10 @@ function EventsCard({
   title,
   location,
   time,
+  handleOpen,
 }: EventsCardProps) {
   return (
-    <Container>
+    <Container onClick={handleOpen}>
       <Image src={require(`../../resources${photo}`).default} alt="" />
       <EventInfo>
         <EventSchedule>
