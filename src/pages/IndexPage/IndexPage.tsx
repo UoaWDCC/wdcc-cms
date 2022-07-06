@@ -30,8 +30,6 @@ import {
   InitiativesScreenContent,
   InitiativesButton,
   ParticlesJS,
-  EventScreen,
-  EventContainer,
   EventGrid,
 } from "./IndexPage.styled";
 

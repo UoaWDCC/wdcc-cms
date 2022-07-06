@@ -6,19 +6,18 @@ export const Container = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-self: center;
   width: 90%;
 
-  @media (max-width: 1280px) {
+  @media screen and (max-width: 1280px) and (min-width: 991px) {
     max-width: 19rem;
     // padding: 0 0 0.5rem 0;
   }
-  @media (max-width: 950px) {
+  @media screen and (max-width: 990px) and (max-width: 784px) {
     max-width: 15rem;
     // max-height: 20rem;
     // padding: 0 0.5rem 0.5rem 0;
   }
-  @media (max-width: 783px) {
+  @media screen and (max-width: 783px) {
     max-width: 100rem;
     padding: 0 0.5rem 0.5rem 0;
   }
@@ -53,15 +52,10 @@ export const EventSchedule = styled.div`
   h4,
   h6 {
     margin: 0.7rem;
-  }
-
-  @media (max-width: 1280px) {
-    h6 {
-      color: white;
-      font-size: 0.8rem;
-      font-weight: normal;
-      padding: 0 2rem;
-    }
+    color: white;
+    font-size: 0.8rem;
+    font-weight: normal;
+    padding: 0 2rem;
   }
 `;
 
@@ -72,6 +66,7 @@ export const EventSummary = styled.div`
   div {
     padding: 1.75rem 0 3rem 1.75rem;
   }
+
   @media (max-width: 1280px) {
     div {
       padding: 0.5rem 0rem 2.5rem 1rem;

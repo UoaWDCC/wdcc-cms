@@ -65,7 +65,7 @@ export const SplashContent = styled.div`
     }
   }
 
-  @media (max-width: 1000px) {
+  @media screen and (max-width: 1000px) and (min-width: 801px) {
     margin-left: 0;
   }
 
@@ -103,97 +103,72 @@ export const SponsorGrid = styled.div`
   display:flex;
   flex-direction:column;
   justify-content:center;
+  height: 100%;
+  
+  @media screen and (max-width: 1280px) and (min-width: 991px) {
+    width: 60%;
+    padding-right: 2.5%
+    height: 100%;
 
-  img {
-    width: 95%;
-    z-index: -1;
-  }
-
-  @media (max-width: 1280px) {
     img {
-      width:100%;
+      width: 550px;
     }
   }
 
-  @media (max-width: 950px) {
-    max-width: 90%;
+  @media screen and (max-width: 990px) and (min-width: 784px) {
+    width: 100%
+
+    img {
+      width: 700px;
+    }
   }
   
   @media (max-width: 783px) {
-    max-width: 100%;
+    width: 100%;
+    img {
+      width: 90%;
+      z-index: -1;
+    }
   }
 
-  // @media (max-width: 700px) {
-  //   h1 {
-  //     padding: 0 20px;
-  //     margin: 0;
-  //     font-size: 1.5rem;
-  //   }
-  //   grid-template-columns: 1fr;
-  //   grid-template-rows: auto 1fr;
-  //   text-align: center;
-  }
 `;
 
 export const EventGrid = styled.div`
-
-  display:flex;
+  display: flex;
   flex-direction: column;
-  height:100%;
-  max-width:30vw;
-  min-width: 300px;
+  width: 35%;
+  padding: 0 1.25%;
+  height: 100%;
   margin: 0;
-  justify-contents: center;
+  justify-content: center;
 
-  // background-color: rgb(211,211,211);
-  // border: 5px solid rgb(180,180,180);
-  // border-radius: 0.5rem;
+  background-color: rgb(29, 96, 157, 0.25);
+  border: none;
+  border-radius: 1rem;
 
-  // h1{
-  //   padding: 0.5rem;
-  //   margin: 0;
-  // }
-   
-  @media (max-width: 1000px) {
+  @media screen and (max-width: 1280px) and (min-width: 991px) {
     img {
-      width:100%;
+      width: 100%;
     }
   }
-
-  // @media (max-width: 700px) {
-  //   h1 {
-  //     padding: 0 20px;
-  //     margin: 0;
-  //     font-size: 1.5rem;
-  //   }
-  //   grid-template-columns: 1fr;
-  //   grid-template-rows: auto 1fr;
-  //   text-align: center;
-
-  @media (max-width: 950px) {
-    max-width: 15rem;
-  }
-  
-  @media (max-width: 783px) {
-    max-width: 30rem;
-    align-items: center;
-  }
+  @media screen and (max-width: 990px) {
+    width: 100%;
+    height: 500px;
   }
 `;
 export const SponsorsScreen = styled(Screen)`
   display: flex;
   min-height: 0;
-
-  justify-content: space-between;
-  align-items: start;
+  padding: 4vw;
   color: #183249;
-  // @media (max-width: 1280px) {
-  //   flex-direction: column;
-  //   align-items: start;
-  // }
 
-  @media (max-width: 783px) {
-    padding: 50px 30px;
+  @media screen and (max-width: 1280px) and (min-width: 991px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: 990px) {
+    padding: 30px;
     flex-direction: column;
   }
 `;
@@ -206,7 +181,7 @@ export const JoinScreen = styled.div`
 
   overflow: hidden;
 
-  @media (max-width: 1000px) {
+  @media screen and (max-width: 1000px) {
     grid-template-rows: 1fr 250px;
     grid-template-columns: 100vw;
   }
@@ -214,7 +189,7 @@ export const JoinScreen = styled.div`
   > div {
     padding: 50px 75px;
 
-    @media (max-width: 600px) {
+    @media screen and (max-width: 600px) {
       padding: 50px 30px;
     }
   }
@@ -258,7 +233,7 @@ export const EventContainer = styled.div`
   padding: 10px 0 20px 0;
   overflow: hidden;
 
-  @media (max-width: 950px) {
+  @media screen and (max-width: 950px) {
     flex-direction: column;
     gap: 40px;
     justify-content: flex-end;
