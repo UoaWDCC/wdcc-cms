@@ -32,8 +32,8 @@ function EventsCardPreview({
       </EventImg>
       <EventInfo>
         <EventSchedule>
-          <h4>{date}</h4>
-          <h6>{time}</h6>
+          <p>{date}</p>
+          <p>{time}</p>
         </EventSchedule>
         <EventSummary>
           <div>

@@ -1,44 +1,34 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin: 1rem;
+  margin: 3% 15% 10% 15%;
   padding: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
-  width: 90%;
-
-  @media screen and (max-width: 1280px) and (min-width: 991px) {
-    max-width: 19rem;
-    // padding: 0 0 0.5rem 0;
-  }
-  @media screen and (max-width: 990px) and (max-width: 784px) {
-    max-width: 15rem;
-    // max-height: 20rem;
-    // padding: 0 0.5rem 0.5rem 0;
-  }
-  @media screen and (max-width: 783px) {
-    max-width: 100rem;
-    padding: 0 0.5rem 0.5rem 0;
-  }
+  width: 70%;
 `;
 export const EventImg = styled.div`
   display: flex;
-  justify-conten: center;
+  flex-direction: row;
   width: 100%;
+  height: 50%;
 `;
 
 export const Image = styled.img`
+  height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 1rem 0 0 0;
 `;
 
 export const EventInfo = styled.div`
-  height: 100%;
+  height: 50%;
   display: flex;
   flex-direction: row;
   color: white;
   width: 100%;
+  text-align: center;
 `;
 
 export const EventSchedule = styled.div`
@@ -47,38 +37,31 @@ export const EventSchedule = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #272727;
-  width: 20%;
+  width: 25%;
 
-  h4,
-  h6 {
-    margin: 0.7rem;
+  p {
+    margin: 1rem;
     color: white;
-    font-size: 0.8rem;
-    font-weight: normal;
-    padding: 0 2rem;
+    font-size: 1rem;
+    padding: 0 5rem;
   }
 `;
 
 export const EventSummary = styled.div`
   background-color: rgb(29, 96, 157);
-  width: 80%;
+  width: 75%;
+  border-radius: 0 0 1rem 0;
+
   // contains subsection, title and loc
   div {
-    padding: 1.75rem 0 3rem 1.75rem;
-  }
-
-  @media (max-width: 1280px) {
-    div {
-      padding: 0.5rem 0rem 2.5rem 1rem;
-    }
+    padding: 1.75rem 0 3rem 1rem;
   }
   div :nth-child(-n + 2) {
     text-transform: uppercase;
   }
   div p {
-    text-transform: capitalize;
     text-align: left;
-    line-height: 0.5rem;
+    line-height: 0.7rem;
     font-size: 0.9rem;
   }
   div :nth-child(odd) {

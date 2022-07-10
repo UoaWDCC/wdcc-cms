@@ -105,7 +105,10 @@ export const SponsorGrid = styled.div`
   justify-content:center;
   height: 100%;
   
-  @media screen and (max-width: 1280px) and (min-width: 991px) {
+  img{
+    margin-bottom: 5vh;
+  }
+  @media screen and (min-width: 991px) {
     width: 60%;
     padding-right: 2.5%
     height: 100%;
@@ -117,6 +120,7 @@ export const SponsorGrid = styled.div`
 
   @media screen and (max-width: 990px) and (min-width: 784px) {
     width: 100%
+    height: 60%;
 
     img {
       width: 700px;
@@ -124,6 +128,7 @@ export const SponsorGrid = styled.div`
   }
   
   @media (max-width: 783px) {
+    height: 60%;
     width: 100%;
     img {
       width: 90%;
@@ -137,32 +142,26 @@ export const EventGrid = styled.div`
   display: flex;
   flex-direction: column;
   width: 35%;
-  padding: 0 1.25%;
-  height: 100%;
-  margin: 0;
-  justify-content: center;
+  padding: 0;
+  justify-content: space-between;
 
   background-color: rgb(29, 96, 157, 0.25);
   border: none;
   border-radius: 1rem;
 
-  @media screen and (max-width: 1280px) and (min-width: 991px) {
-    img {
-      width: 100%;
-    }
-  }
   @media screen and (max-width: 990px) {
     width: 100%;
-    height: 500px;
+    margin: 0;
   }
 `;
+
 export const SponsorsScreen = styled(Screen)`
   display: flex;
   min-height: 0;
   padding: 4vw;
   color: #183249;
 
-  @media screen and (max-width: 1280px) and (min-width: 991px) {
+  @media screen and (min-width: 991px) {
     flex-direction: row;
     justify-content: space-around;
   }
